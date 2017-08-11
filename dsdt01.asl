@@ -17,12 +17,11 @@ DefinitionBlock ("", "DSDT", 2, "UBUNTU", "_DSDT_01", 0x00000001)
 	Scope (_SB) {
 		/* Customized Hotkey Device */
 		Device (HOTK) {
-			/* Driver ready flag */
-			Name (DRDY, 0)
+			Name (DRDY, 0)	/* Driver ready flag */
 			Name (_HID, "UBTU0001")
 
 			Method (_STA) { 
-				return (0xF)
+				Return (0xF)
 			}
 
 			/* Driver Load = 1 & unload = 0 */
@@ -44,7 +43,9 @@ DefinitionBlock ("", "DSDT", 2, "UBUNTU", "_DSDT_01", 0x00000001)
 			Method (_STA) { 
 				return (0xF)
 			}
-			
+
+			/* Note: notification number 0x80~0x83 can be read from EC RAM */
+
 			/* Volume up */
 			Method (_Q01) {
 				\_SB.HOTK.NTFY(0x80)

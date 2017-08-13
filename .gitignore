@@ -1,3 +1,10 @@
+Module.symvers
+modules.order
+.tmp*
 *.swp
 *.dsl
 *.aml
+*.o
+*.mod.c
+*.ko
+*.cmd

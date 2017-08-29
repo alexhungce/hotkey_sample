@@ -18,7 +18,7 @@ DefinitionBlock ("", "DSDT", 2, "UBUNTU", "_DSDT_01", 0x00000001)
 		/* Customized Hotkey Device */
 		Device (HOTK) {
 			Name (DRDY, 0)	/* Driver ready flag */
-			Name (_HID, "UBTU0001")
+			Name (_HID, "UBT0001")
 
 			Method (_STA) { 
 				Return (0xF)

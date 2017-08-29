@@ -19,7 +19,7 @@ DefinitionBlock ("", "DSDT", 2, "UBUNTU", "_DSDT_01", 0x00000001)
 		Device (HOTK) {
 			Name (DRDY, 0)	/* Driver ready flag */
 			Name (EKEY, 0)	/* Event code */
-			Name (_HID, "UBTU0001")
+			Name (_HID, "UBTU0002")
 
 			Method (_STA) { 
 				Return (0xF)

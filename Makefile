@@ -1,4 +1,4 @@
-obj-m += ubuntu-hid-01.o
+obj-m += ubuntu-hid-01.o ubuntu-hid-02.o
 
 all:
 	iasl dsdt01.asl dsdt02.asl

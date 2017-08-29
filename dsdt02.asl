@@ -31,7 +31,7 @@ DefinitionBlock ("", "DSDT", 2, "UBUNTU", "_DSDT_01", 0x00000001)
 			}
 
 			/* Report event code to driver */
-			Method (GETK, 1) {
+			Method (GETK) {
 				Return (EKEY)
 			}
 

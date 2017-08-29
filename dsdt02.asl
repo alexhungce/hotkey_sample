@@ -64,15 +64,9 @@ DefinitionBlock ("", "DSDT", 2, "UBUNTU", "_DSDT_01", 0x00000001)
 				\_SB.HOTK.NTFY()
 			}
 
-			/* Radio off */
+			/* Radio toggle */
 			Method (_Q03) { 
 				Store(0x82, \_SB.HOTK.EKEY)
-				\_SB.HOTK.NTFY()
-			}
-
-			/* Radio on */
-			Method (_Q04) { 
-				Store(0x83, \_SB.HOTK.EKEY)
 				\_SB.HOTK.NTFY()
 			}
 		}
